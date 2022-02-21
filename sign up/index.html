@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="sign_up.css" />
+    <title>Sign Up Page </title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+
+        <form id="input">
+            <div class="form-item-username">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            </div>
+
+            <div class="form-item">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-item">
+                <input type="password" name="password" id="password" placeholder="Enter password">
+            </div>
+        </form>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male">
+                <label class="form-check-label" for="male">
+                    Male
+                </label>
+
+                <input class="form-check-input" type="radio" name="gender" id="female" checked>
+                <label class="form-check-label" for="female">
+                    Female
+                </label>
+
+                <input class="form-check-input" type="radio" name="gender" id="other" checked>
+                <label class="form-check-label" for="other">
+                    Other
+                </label>
+            </div>
+
+                <div id="date-of-birth">
+                    <legend>Date of birth</legend>
+                    <div class="field-inline-block">
+                        <label>DD</label>
+                        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+                        /
+                        <label>MM</label>
+                        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+                        /
+                        <label>YYYY</label>
+                        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" />
+                    </div>
+                </div>
+
+            <div class="form-btns">
+                <button class="signup" type="submit">Sign Up</button>
+            </div>
+            <div class="options">
+            Already have account? <a  class="signin" href="../sign%20in">Sign In</a>
+            </div>
+    </div>
+
+</body>
+
+</html>
+
